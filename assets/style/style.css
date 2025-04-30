@@ -484,7 +484,7 @@ body.modoClaro .skillsIcon ul li i {
     header { 
         align-items: center;
     }
-        
+    
     /* Esconde menu original no mobile */
     .navbar a{
         display: none;
