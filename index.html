@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/style/style.css"> 
+  <meta name="description" content="Portfólio de Carlos Eduardo, desenvolvedor front-end.">
+
+  <title>Carlos Eduardo</title>
+</head>
+<body>
+
+  <!-- Início Cabeçalho -->
+  <header>
+    <!-- Início Imagem da Logo -->
+    <img src="assets/img/logoDark.png" alt="logo" class="logo">
+    <!-- Fim Imagem da Logo -->
+
+    <!-- Início Navegação -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#sobreMim">Sobre Mim</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li>
+          <button title="Alternar Modo Escuro/Claro">
+            <i class="fa-regular fa-moon" style="color: #8AFAD8;"></i>
+          </button>
+        </li>
+      </ul>
+      </nav>
+    <!-- Fim Navegação -->
+  </header>
+  <!-- Fim Cabeçalho -->
+
+  <!-- Início Conteúdo Principal -->
+  <main>
+    <!-- Seção: Apresentação -->
+    <section class="apresentacao" id="apresentacao">
+      <div class="boxSec1">
+        
+        <!-- Início Frase Principal -->
+        <div class="frasePrincipal from-left">
+          <h1>Carlos Eduardo</h1>
+          <h2>Desenvolvedor Front-End</h2>
+          <h3>Do mundo dos games para o universo do Front-End <br> aqui cada bug é um novo desafio.</h3>
+
+          <!-- Início Contatos -->
+          <ul class="contact">
+            <li title="Linkedin"><a href="https://www.linkedin.com/in/carlos-eduardo-8751b82b7/" target="_blank" rel="external"><i class="fa-brands fa-linkedin" id="contactIcon1"></i></a></li>
+            <li title="Github"><a href="https://github.com/Ceduardoz" target="_blank" rel="external"><i class="fa-brands fa-github" id="contactIcon2"></i></a></li>
+            <li title="Gmail"><a href="mailto:ceduardoz957@gmail.com?..."><i class="fa-solid fa-envelope" id="contactIcon3"></i></a></li>
+            <li title="Whatsapp"><a href="https://wa.me/81992302347" target="_blank" rel="external"><i class="fa-brands fa-whatsapp" id="contactIcon4"></i></a></li>
+            <li title="Curriculo"><a href="assets/PDF/Curriculo-CarlosEduardo.pdf" download="Curriculo-CarlosEduardo.pdf"><i class="fa-solid fa-file-pdf" id="contactIcon5"></i></a></li>
+          </ul>
+          <!-- Fim Contatos -->
+        </div>
+        <!-- Fim Frase Principal -->
+
+        <!-- Início Card Avatar -->
+        <div class="avatar from-right">
+          <img src="assets/img/avatarQuadrados.png" alt="Foto Principal">
+        </div>
+        <!-- Fim Card Avatar -->
+
+      </div>
+    </section>
+    <!-- Fim Seção: Apresentação -->
+
+    <!-- Seção: Sobre Mim -->
+    <section class="sobreMim" id="sobreMim">
+      <div class="box boxSec2 from-top">
+        
+        <!-- Início Imagem Principal-->
+        <div class="imgPrincipal">
+          <img src="assets/img/fotoPerfil1.jpg" alt="Foto Secundária">
+        </div>
+        <!-- Fim Imagem Principal -->
+
+        <!-- Início Texto Sobre Mim -->
+        <div class="sobreTexto">
+          <h1>Sobre Mim</h1>
+          <p>Estou trilhando meu caminho no desenvolvimento Front-End há cerca de um ano. Meu primeiro contato com esse         universo veio através da minha paixão por jogos, especialmente os de puzzle, que sempre desafiaram minha lógica e criatividade.
+            <br> <br>
+          Desde então, mergulhei nos estudos com curiosidade, sempre buscando entender como as coisas funcionam por trás das interfaces. Gosto de aprender experimentando, testando, errando e descobrindo soluções.
+            <br> <br>
+          Atualmente, sou estudante na UNIPÊ, onde venho aprofundando meus conhecimentos e me preparando para atuar profissionalmente na área. Estou animado com as oportunidades que a tecnologia oferece e sigo focado em desenvolver interfaces que sejam funcionais, acessíveis e visualmente agradáveis.</p>
+        </div>
+        <!-- Fim Texto Sobre Mim -->
+
+      </div>
+    </section>
+    <!-- Fim Seção: Sobre Mim -->
+
+    <!-- Seção: Habilidades -->
+    <section class="habilidades" id="habilidades">
+      <div class="box boxSec3 from-left">
+
+        <!-- Início Habilidades Front-End e Back-End -->
+        <div class="skillsIcon">
+          <h1>Front-End</h1>
+          <ul>
+            <li><i class="fa-brands fa-css3-alt" id="cssIcon"></i></li>
+            <li><i class="fa-brands fa-html5" id="htmlIcon"></i></li>
+            <li><i class="fa-brands fa-js" id="jsIcon"></i></li>
+          </ul>
+          <h1>Back-End</h1>
+          <ul>
+            <li><i class="fa-brands fa-php" id="phpIcon"></i></li>
+            <li><i class="fa-solid fa-database" id="bdIcon"></i></li>
+            <li><i class="fa-brands fa-python" id="pythonIcon"></i></li>
+          </ul>
+        </div>
+        <!-- Fim Habilidades Front-End e Back-End -->
+
+      </div>
+    </section>
+    <!-- Fim Seção: Habilidades -->
+
+    <!-- Seção: Projetos -->
+    <section class="projetos" id="projetos">
+      <h1>Projetos</h1>
+      <div class="box boxSec4 from-right">
+
+        <!-- Início Cards de Projetos -->
+        <article class="cardProjetos">
+          <div class="imgContainer">
+            <img src="assets/img/Timer.jpg" alt="Projeto Timer">
+            <div class="overlay">
+              <h1>Timer</h1>
+              <p>Um cronômetro funcional criado com HTML, CSS e JavaScript, capaz de iniciar, pausar, resetar e contar regressivamente o tempo. Projeto ideal para treinar controle de tempo, manipulação do DOM e lógica com setInterval. Interface simples e responsiva.</p>
+              <p><a href="https://timer-gilt-theta.vercel.app" target="_blank" rel="external"><i class="fa-solid fa-eye"></i></a></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="cardProjetos">
+          <div class="imgContainer">
+            <img src="assets/img/Calculadora.jpg" alt="Projeto Calculadora">
+            <div class="overlay">
+              <h1>Calculadora</h1>
+              <p>Um projeto de calculadora básica desenvolvida com HTML, CSS e JavaScript. Permite realizar operações matemáticas fundamentais como adição, subtração, multiplicação e divisão. Ideal para estudos de lógica de programação, manipulação do DOM e desenvolvimento front-end.</p>
+              <p><a href="https://calculadora-zeta-ruddy.vercel.app" target="_blank" rel="external"><i class="fa-solid fa-eye"></i></a></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="cardProjetos">
+          <div class="imgContainer">
+            <img src="assets/img/ListaTarefa.jpg" alt="Projeto Lista de Tarefas">
+            <div class="overlay">
+              <h1>Lista de Tarefas</h1>
+              <p>Aplicação web de lista de tarefas feita com HTML, CSS e JavaScript. Permite adicionar, marcar como concluída e remover tarefas. Projeto focado em lógica de arrays, eventos do DOM e armazenamento local com LocalStorage. Interface limpa</p>
+              <p><a href="https://listatarefas-zeta.vercel.app" target="_blank" rel="external"><i class="fa-solid fa-eye"></i></a></p>
+            </div>
+          </div>
+        </article>
+        <!-- Fim Cards de Projetos -->
+
+      </div>
+    </section>
+    <!-- Fim Seção: Projetos -->
+  </main>
+  <!-- Fim Conteúdo Principal -->
+
+  <!-- Início Rodapé -->
+  <footer>
+    <p>&copy;2025 Carlos Eduardo Barbosa Alves. Todos os direitos reservados.</p>
+  </footer>
+  <!-- Fim Rodapé -->
+
+  <!-- Script JS Personalizado -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
