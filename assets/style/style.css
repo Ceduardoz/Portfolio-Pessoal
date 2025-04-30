@@ -481,15 +481,15 @@ body.modoClaro .skillsIcon ul li i {
 @media (max-width: 768px) {
 
     /* Cabeçalho */
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    header { 
+        align-items: center;
     }
         
     /* Esconde menu original no mobile */
-    .navbar {
+    .navbar a{
         display: none;
     }
+
     
     /* Apresentação */
     .boxSec1 {
