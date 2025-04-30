@@ -5,10 +5,10 @@ const avatar = document.querySelector('.avatar');
 frasePrincipal.classList.add('show');
 frasePrincipal.style.transition = 'all 1s ease';
 
-frasePrincipal.addEventListener('transitionend', () => {
+setTimeout(() => {
     avatar.style.transition = 'all 1s ease';
     avatar.classList.add('show');
-})
+}, 1000);
 
 //            SCROLL
 const boxes = document.querySelectorAll('.box');
