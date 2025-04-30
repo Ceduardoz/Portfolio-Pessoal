@@ -498,7 +498,7 @@ body.modoClaro .skillsIcon ul li i {
         padding: 5vh 5vw;
     }
         
-    .img1 img {
+    .avatar img {
         margin-left: 0;
         max-width: 80vw;
     }
@@ -514,11 +514,11 @@ body.modoClaro .skillsIcon ul li i {
         font-size: 1rem;
     }
         
-    .img2 {
+    .imgPrincipal {
         width: 100%;
     }
         
-    .img2 img {
+    .imgPrincipal img {
         max-width: 90%;
     }
         
