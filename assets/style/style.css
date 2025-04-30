@@ -54,7 +54,8 @@ img{
     height: auto;
 }
 
-a, i {
+.navbar, button,
+.skillsIcon{
     text-shadow: 2px 2px 2px var(--color1);
 }
 
