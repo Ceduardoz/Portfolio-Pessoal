@@ -3,10 +3,8 @@ const frasePrincipal = document.querySelector('.frasePrincipal');
 const avatar = document.querySelector('.avatar');
 
 frasePrincipal.classList.add('show');
-frasePrincipal.style.transition = 'all 1s ease';
 
 setTimeout(() => {
-    avatar.style.transition = 'all 1s ease';
     avatar.classList.add('show');
 }, 1000);
 
@@ -23,12 +21,11 @@ window.addEventListener('scroll', () => {
 
             if (boxTop < triggerBottom) {
                 box.classList.add('show');
-                box.style.transition = 'all 1s ease';
             } else {
                 box.classList.remove('show');
             }
         });
-    }, 20);
+    }, 0);
 });
 
 //          MODO CLARO/ESCURO
@@ -38,7 +35,6 @@ const logoImg = document.querySelector('.logo');
 
 btnDarkMode.addEventListener('click', () => {
     body.classList.toggle('modoClaro');
-
     const icon = btnDarkMode.querySelector('i');
 
     if (body.classList.contains('modoClaro')) {
@@ -46,13 +42,45 @@ btnDarkMode.addEventListener('click', () => {
         icon.classList.add('fa-sun');
         icon.style.color = '#31c79c';
         logoImg.src = '/assets/img/logoLight.png';
+        salvarTema('claro');
+    } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        icon.style.color = '#8AFAD8';
+        logoImg.src = 'assets/img/logoDark.png';
+        salvarTema('escuro');
+    }
+});
+
+//      LOCAL STORAGE JSON
+
+//          SALVAR TEMA
+function salvarTema(modo){
+    const dados = {tema: modo};
+    localStorage.setItem('preferencias', JSON.stringify(dados));
+}
+//          CARREGAR TEMA
+function carregarTema(){
+    const dadosSalvos = localStorage.getItem('preferencias');
+    if(dadosSalvos) {
+        return JSON.parse(dadosSalvos).tema;
+    }
+    return null;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const temaSalvo = carregarTema();
+    const icon = btnDarkMode.querySelector('i');
+    if(temaSalvo === 'claro') {
+        body.classList.add('modoClaro');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        icon.style.color = '#31c79c';
+        logoImg.src = 'assets/img/logoLight.png';
     } else {
         icon.classList.remove('fa-sun');
         icon.classList.add('fa-moon');
         icon.style.color = '#8AFAD8';
         logoImg.src = 'assets/img/logoDark.png';
     }
-
 });
-
-
