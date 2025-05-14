@@ -145,14 +145,14 @@ header {
 .from-top { transform: translateY(-100px); }
     
 /*      APRESENTAÇÃO        */
-section.apresentacao {
+section.apresentation {
     width: 100%;
     height: 85vh;
     margin: 0;
     padding: 0;
 }
 
-.boxSec1 {
+.sectionBox1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -161,32 +161,32 @@ section.apresentacao {
     padding-top: 10vh;
 }
 
-.frasePrincipal {
+.firstPhrase {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-.frasePrincipal.show {
+.firstPhrase.show {
     opacity: 1;
     transition: all 1s ease;
     transform: translateX(0) scale(1);
 }
 
-.frasePrincipal h1 {
+.firstPhrase h1 {
     font-family: var(--fontDestaque);
     font-size: clamp(2rem, 5vw, 4rem);
     font-weight: bold;
     color: var(--color4);
 }
 
-.frasePrincipal h2 {
+.firstPhrase h2 {
     font-size: clamp(1.5rem, 4vw, 2rem);
     color: var(--color3);
     text-align: center;
     padding-bottom: 5px;
 }
 
-.frasePrincipal h3 {
+.firstPhrase h3 {
     font-size: clamp(1rem, 3vw, 1.2rem);
     color: var(--color6);
 }
@@ -242,7 +242,7 @@ section.apresentacao {
 }
 
 /*      SOBRE MIM       */
-.sobreMim {
+.aboutMe {
     width: 100%;
     min-height: 100vh;
     padding-top: 15vh;
@@ -251,7 +251,7 @@ section.apresentacao {
     box-shadow: inset 2px 2px 20px var(--colorSec4);
 }
 
-.boxSec2 {
+.sectionBox2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -259,7 +259,7 @@ section.apresentacao {
     gap: 30px;
 }
 
-.sobreTexto {
+.overText {
     background-color: var(--colorSec1);
     backdrop-filter: blur(2px);
     font-family: var(--fontPrincipal);
@@ -272,7 +272,7 @@ section.apresentacao {
     text-align: center;
 }
 
-.sobreTexto h1 {
+.overText h1 {
     font-family: var(--fontSecundaria);
     font-size: clamp(2rem, 5vw, 3rem);
     color: var(--color4);
@@ -280,7 +280,7 @@ section.apresentacao {
     margin-bottom: 15px;
 }
 
-.imgPrincipal {
+.imgMain {
     width: clamp(280px, 80vw, 600px);
     height: auto;
     display: flex;
@@ -288,7 +288,7 @@ section.apresentacao {
     align-items: center;
 }
 
-.imgPrincipal img {
+.imgMain img {
     width: 100%;
     max-width: 420px;
     border-radius: 24px;
@@ -296,7 +296,7 @@ section.apresentacao {
 }
 
 /*      SKILLS      */
-.boxSec3 {
+.sectionBox3 {
     width: 100%;
     min-height: 100vh;
 }
@@ -343,7 +343,7 @@ section.apresentacao {
 #pythonIcon { color: #3776AB; }
 
 /*      PROJETOS        */
-.boxSec4 {
+.sectionBox4 {
     width: 100%;
     min-height: 80vh;
     display: flex;
@@ -353,7 +353,7 @@ section.apresentacao {
     padding: 5vh 5vw;
 }
 
-.projetos h1 {
+.projets h1 {
     font-family: var(--fontSecundaria);
     font-size: clamp(2rem, 5vw, 3rem);
     color: var(--color4);
@@ -362,21 +362,13 @@ section.apresentacao {
     text-shadow: 2px 2px 4px var(--color3);
 }
 
-.cardProjetos {
+.cardProjets {
     width: clamp(280px, 90vw, 300px);
     text-align: center;
     position: relative;
 }
 
-.imgContainer {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 2px 2px 10px var(--colorSec2);
-}
-
-.cardProjetos img {
+.cardProjets img {
     width: 100%;
     object-fit: cover;
     border: 2px solid var(--color2);
@@ -384,9 +376,17 @@ section.apresentacao {
     transition: transform 0.3s ease;
 }
 
-.cardProjetos img:hover {
-    transform: scale(1.05);
+.cardProjets img:hover {
+    transform: scale(1.0);
 }
+
+.imgContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
 
 .overlay {
     position: absolute;
@@ -418,9 +418,19 @@ section.apresentacao {
     color: var(--color6);
 }
 
-.cardProjetos i {
+.overlay i {
     font-size: clamp(1.5rem, 5vw, 2rem);
     color: var(--color4);
+}
+
+.outOverlay {
+    display: none;
+}
+
+.outOverlay a {
+    font-size: 1.5em;
+    color: var(--color4);
+    text-shadow: 1px 1px 4px var(--color1);
 }
 
 /*      FOOTER      */
@@ -437,31 +447,31 @@ footer {
 }
 
 /*      MODO CLARO      */
-body.modoClaro {
+body.whiteMode {
     --bg-color: var(--color6);
     --text-color: var(--color1);
     --link-hover-bg: var(--color1);
     --contact-hover-bg: var(--color1);
 }
 
-body.modoClaro h1{
+body.whiteMode h1{
     color: var(--color7);
 }
 
-body.modoClaro .navbar a{
+body.whiteMode .navbar a{
     color: var(--color7);
 }
 
-body.modoClaro .apresentacao h3 {
+body.whiteMode .apresentation h3 {
     color: var(--color1);
 }
 
-body.modoClaro .sobreMim {
+body.whiteMode .aboutMe {
     background-image: url("/assets/img/verdeClaroLight.png");
     background-blend-mode: luminosity;
 }
 
-body.modoClaro .sobreTexto {
+body.whiteMode .overText {
     background-color: var(--colorSec2);
     backdrop-filter: blur(2px);
     color: var(--color1);
@@ -469,16 +479,16 @@ body.modoClaro .sobreTexto {
     font-weight: 600;
 }
 
-body.modoClaro .skillsIcon h1{
+body.whiteMode .skillsIcon h1{
     color: var(--color7);
 }
 
 
-body.modoClaro footer {
+body.whiteMode footer {
     color: var(--color1);
 }
 
-body.modoClaro .skillsIcon ul li i {
+body.whiteMode .skillsIcon ul li i {
     color: var(--color3);
 }
 
@@ -497,7 +507,7 @@ body.modoClaro .skillsIcon ul li i {
 
     
     /* Apresentação */
-    .boxSec1 {
+    .sectionBox1 {
         flex-direction: column;
         text-align: center;
         padding: 5vh 5vw;
@@ -509,21 +519,21 @@ body.modoClaro .skillsIcon ul li i {
     }
         
     /* Sobre Mim */
-    .boxSec2 {
+    .sectionBox2 {
         flex-direction: column;
         padding: 5vh 5vw;
     }
         
-    .sobreTexto {
+    .overText {
         width: 100%;
         font-size: 1rem;
     }
         
-    .imgPrincipal {
+    .imgMain {
         width: 100%;
     }
         
-    .imgPrincipal img {
+    .imgMain img {
         max-width: 90%;
     }
         
@@ -538,13 +548,13 @@ body.modoClaro .skillsIcon ul li i {
     }
         
     /* Projetos */
-    .boxSec4 {
+    .sectionBox4 {
         flex-direction: column;
         gap: 30px;
         padding: 5vh 5vw;
     }
         
-    .cardProjetos {
+    .cardProjets {
         width: 100%;
     }
         
@@ -552,6 +562,14 @@ body.modoClaro .skillsIcon ul li i {
         width: 100%;
         height: auto;
         border-radius: 16px;
+    }
+
+    .imgContainer p {
+        display: block;
+    }
+
+    .overlay{
+        display: none;
     }
         
     /* Rodapé */

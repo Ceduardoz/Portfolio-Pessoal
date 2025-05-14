@@ -1,5 +1,5 @@
 //      INICIAR A PAGINA
-const frasePrincipal = document.querySelector('.frasePrincipal');
+const frasePrincipal = document.querySelector('.firstPhrase');
 const avatar = document.querySelector('.avatar');
 
 frasePrincipal.classList.add('show');
@@ -34,21 +34,21 @@ const body = document.body;
 const logoImg = document.querySelector('.logo');
 
 btnDarkMode.addEventListener('click', () => {
-    body.classList.toggle('modoClaro');
+    body.classList.toggle('whiteMode');
     const icon = btnDarkMode.querySelector('i');
 
-    if (body.classList.contains('modoClaro')) {
+    if (body.classList.contains('whiteMode')) {
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
         icon.style.color = '#31c79c';
         logoImg.src = '/assets/img/logoLight.png';
-        salvarTema('claro');
+        salvarTema('white');
     } else {
         icon.classList.remove('fa-sun');
         icon.classList.add('fa-moon');
         icon.style.color = '#8AFAD8';
         logoImg.src = 'assets/img/logoDark.png';
-        salvarTema('escuro');
+        salvarTema('dark');
     }
 });
 
@@ -71,8 +71,8 @@ function carregarTema(){
 window.addEventListener('DOMContentLoaded', () => {
     const temaSalvo = carregarTema();
     const icon = btnDarkMode.querySelector('i');
-    if(temaSalvo === 'claro') {
-        body.classList.add('modoClaro');
+    if(temaSalvo === 'white') {
+        body.classList.add('whiteMode');
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
         icon.style.color = '#31c79c';
