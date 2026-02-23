@@ -371,7 +371,7 @@ section.apresentation {
 }
 
 .cardProjets img {
-    width: 100%;
+    width: 300px;
     object-fit: cover;
     border: 2px solid var(--color2);
     border-radius: 16px;
@@ -384,7 +384,7 @@ section.apresentation {
 
 .imgContainer {
     position: relative;
-    width: 100%;
+    max-width: 300px;
     overflow: hidden;
     border-radius: 16px;
 }
